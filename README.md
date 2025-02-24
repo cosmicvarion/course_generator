@@ -1,13 +1,14 @@
 # README
 
 ## Prompt Chain Flow Diagram
-```mermaid flowchart TB
-    A((User Input\\Course Title + Description)):::input --> B{Chain 1\\Generate Outline}:::chain
-    B --> C([Outline Output]):::output
-    C --> D{Chain 2\\Generate Lessons}:::chain
-    D --> E([Detailed Lessons Output]):::output
-    E --> F{Optional Chain 3\\Refinement}:::chain
-    F --> G([Refined Lessons Output]):::output
+```mermaid
+flowchart TB
+    A["User Input: Course Title + Description"]:::input --> B{"Chain 1: Generate Outline"}:::chain
+    B --> C["Outline Output"]:::output
+    C --> D{"Chain 2: Generate Lessons"}:::chain
+    D --> E["Detailed Lessons Output"]:::output
+    E --> F{"Optional Chain 3: Refinement"}:::chain
+    F --> G["Refined Lessons Output"]:::output
 
     classDef input fill:#FFEDD5,stroke:#333,stroke-width:1px,color:#000
     classDef chain fill:#DBEAFE,stroke:#333,stroke-width:1px,color:#000
