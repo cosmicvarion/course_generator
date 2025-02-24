@@ -1,8 +1,7 @@
 # README
 
 ## Prompt Chain Flow Diagram
-```
-flowchart TB
+```mermaid flowchart TB
     A((User Input\\Course Title + Description)):::input --> B{Chain 1\\Generate Outline}:::chain
     B --> C([Outline Output]):::output
     C --> D{Chain 2\\Generate Lessons}:::chain
