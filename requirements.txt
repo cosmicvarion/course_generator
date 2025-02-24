@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+openai
+langchain
+langchain-openai
+langgraph
+jupyterlab
+requests
+sseclient-py
+dotenv
