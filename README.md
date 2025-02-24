@@ -50,7 +50,7 @@ flowchart TB
      ```
    - **Response**:  
      An **SSE** stream with one or more events containing `"lessons": "..."`
-     ```json
+     ```
      data: {"lessons": "..."}
      ```
    - The final lessons text is stored in `SESSIONS[session_id]["lessons"]`.
